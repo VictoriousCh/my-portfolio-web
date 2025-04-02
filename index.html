@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts (Optional) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <!-- Logo / Branding -->
+      <div class="logo">MyPortfolio</div>
+      <!-- Mobile menu toggle (hidden on larger screens) -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <!-- Unicode hamburger icon -->
+        &#9776;
+      </label>
+      <!-- Navigation Menu -->
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / LANDING SECTION -->
+  <section id="home" class="hero-section container">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Victorious Chaponda</span></h1>
+      <h2>UI/UX Designer &amp; Mobile App Developer</h2>
+      <p>
+        A passionate web developer with a love for creating functional and
+        beautiful web experiences. Specializing in UI/UX design and mobile
+        application development.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+        <a href="https://drive.google.com/file/d/1Njm7MdpkqM6snQAw8pGOADJzzEgae7wM/view?usp=sharing" class="btn secondary-btn">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Replace with your own image -->
+      <img src="images/profile.jpg" alt="Profile Preview" />
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <!-- About text -->
+      <div class="about-text">
+        <h3>Who I Am</h3>
+        <p>
+          I'm a passionate UI/UX Designer and Mobile App Developer with a love
+          for creating functional and beautiful digital experiences. My journey
+          in the tech world has been driven by a desire to blend aesthetic
+          design with practical functionality.
+        </p>
+        <p>
+          With expertise in both design and development, I bridge the gap
+          between creative vision and technical implementation, ensuring that
+          the end products are not only visually appealing but also
+          user-friendly and efficient.
+        </p>
+      </div>
+      <!-- Interests list -->
+      <div class="about-interests">
+        <h3>Interests</h3>
+        <ul>
+          <li>
+            <strong>Web Development:</strong> Exploring modern frameworks and
+            best practices.
+          </li>
+          <li>
+            <strong>Tech Innovations:</strong> Keeping up with emerging trends
+            in technology.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="education-section container">
+    <h2>Educational Background</h2>
+    <div class="education-content">
+      <div class="education-item">
+        <h3>Bachelor of Science in Sustainable Energy System</h3>
+        <p>Malawi University of Science and Technology, 2017 - 2022</p>
+        <p>
+          Was introduced to IoT, C++ and other languages and applied programming
+          to solve problems in the energy and agriculture sectors.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects-section container">
+    <h2>My Projects</h2>
+    <p>
+      Here are some of the projects I’ve worked on, showcasing my skills in
+      UI/UX design and mobile app development.
+    </p>
+    <div class="project-cards">
+      <!-- PROJECT CARD 1 -->
+      <div class="project-card">
+        <h3>Malawi Sports Voting System</h3>
+        <p>
+          Designed the user interface and experience for a sports voting system,
+          focusing on intuitive navigation and engaging visual elements.
+        </p>
+        <p><strong>Tools Used:</strong> Figma, Adobe Illustrator, Adobe Photoshop</p>
+      </div>
+      <!-- PROJECT CARD 2 -->
+      <div class="project-card">
+        <h3>Mobile Banking System</h3>
+        <p>
+          Created a secure and user-friendly mobile banking application with a
+          focus on accessibility and transaction security.
+        </p>
+        <p><strong>Tools Used:</strong> Figma, Adobe Photoshop, Dart, Flutter</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section container">
+    <h2>Send Me a Message</h2>
+    <p>Feel free to reach out for collaboration, questions, or just to say hello!</p>
+    <div class="contact-form-container">
+      <!-- Contact Form -->
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="How can I help you?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Victorious Chaponda. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
